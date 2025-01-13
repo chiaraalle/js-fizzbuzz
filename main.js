@@ -8,6 +8,20 @@ Consigli del giorno:
 1. scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 2. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"*/
 
-for (let i = 1; i < 100; i++) {
-    console.log(i);
+//creo un ciclo che sampi i numeri da 1 a 100
+/*creo un if e un else if
+-per i numeri che sono multipli di 3 al posto del numero compare la scritta Fizz
+-per i numeri che sono multipli di 5 comparirà invece la scritta Buzz
+-per quelli che sono multipli sia di 3 che di 5 comparirà la scritta Fizzbuzz
+*/
+
+for (let i = 1; i <= 100; i++) {
+    if( i % 3 == 0 ) {
+      console.log(`Fizz`);
+    } else if ( i % 5 == 0 ) {
+      console.log(`Buzz`);
+    } else {
+      console.log(`FizzBuzz`);
+    }
+    
   }
